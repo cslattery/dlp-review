@@ -1,1 +1,1423 @@
-PLACEHOLDER
+[
+  {
+    "profile_id": "prof_scan_20260801_myproj_customers_customers_email_stable",
+    "scan_id": "scan_20260801",
+    "profiled_at": "2026-08-01T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "email_stable",
+    "column_fqn": "myproj.customers.customers.email_stable",
+    "data_type": "STRING",
+    "column_description": "Billing email, already tagged.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "name_normalized": "email_stable",
+    "name_suffix": "email_stable",
+    "rows_inspected": 1000,
+    "findings_total": 90,
+    "hit_rate": 0.09,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 90,
+        "very_likely": 90,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "stable***@billing.example"
+    ],
+    "sample_value_hashes": [
+      "f1c74046923efc5cf20714b92660b991bbf5f8f65aadde89aef3b0597261aa5c"
+    ],
+    "approx_ndv": 99000,
+    "null_rate": 0.01,
+    "length_p50": 21,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 21,
+      "top_value_hashes": [
+        "f1c74046923efc5cf20714b92660b991bbf5f8f65aadde89aef3b0597261aa5c"
+      ]
+    },
+    "dlp_fingerprint": 39887819533075544,
+    "value_fingerprint": 65455289791154760,
+    "proposed_term_id": "pii.customer.email",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.email",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType EMAIL_ADDRESS maps to pii.customer.email (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260801_myproj_customers_customers_legacy_id",
+    "scan_id": "scan_20260801",
+    "profiled_at": "2026-08-01T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "legacy_id",
+    "column_fqn": "myproj.customers.customers.legacy_id",
+    "data_type": "STRING",
+    "column_description": "Was billed as email; rescan looks like national id.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "name_normalized": "legacy_id",
+    "name_suffix": "legacy_id",
+    "rows_inspected": 1000,
+    "findings_total": 88,
+    "hit_rate": 0.088,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 88,
+        "very_likely": 88,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "old***@billing.example"
+    ],
+    "sample_value_hashes": [
+      "fdac71912c849c19cc298f5f642af15d7f72de585c27751269078d83d924919c"
+    ],
+    "approx_ndv": 96000,
+    "null_rate": 0.02,
+    "length_p50": 22,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 22,
+      "top_value_hashes": [
+        "fdac71912c849c19cc298f5f642af15d7f72de585c27751269078d83d924919c"
+      ]
+    },
+    "dlp_fingerprint": 39887819533075544,
+    "value_fingerprint": 70356564305025420,
+    "proposed_term_id": "pii.customer.email",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.email",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType EMAIL_ADDRESS maps to pii.customer.email (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260801_myproj_customers_customers_mobile",
+    "scan_id": "scan_20260801",
+    "profiled_at": "2026-08-01T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "mobile",
+    "column_fqn": "myproj.customers.customers.mobile",
+    "data_type": "STRING",
+    "column_description": "Mobile number. Live tag disagrees with last approval.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "name_normalized": "mobile",
+    "name_suffix": "mobile",
+    "rows_inspected": 800,
+    "findings_total": 70,
+    "hit_rate": 0.0875,
+    "info_type_histogram": [
+      {
+        "info_type": "PHONE_NUMBER",
+        "findings": 70,
+        "very_likely": 70,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "PHONE_NUMBER",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "+1 202 555 01**"
+    ],
+    "sample_value_hashes": [
+      "98a45bf0079fc238214129dedac574af874edca294981dd61714c2e7b16baeac"
+    ],
+    "approx_ndv": 88000,
+    "null_rate": 0.04,
+    "length_p50": 12,
+    "dlp_payload": {
+      "dominant_info_type": "PHONE_NUMBER",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "PHONE_NUMBER",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 12,
+      "top_value_hashes": [
+        "98a45bf0079fc238214129dedac574af874edca294981dd61714c2e7b16baeac"
+      ]
+    },
+    "dlp_fingerprint": 64664308361525940,
+    "value_fingerprint": 15162516558834096,
+    "proposed_term_id": "pii.customer.phone",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.phone",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType PHONE_NUMBER maps to pii.customer.phone (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260801_myproj_customers_customers_notes_free",
+    "scan_id": "scan_20260801",
+    "profiled_at": "2026-08-01T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "notes_free",
+    "column_fqn": "myproj.customers.customers.notes_free",
+    "data_type": "STRING",
+    "column_description": "Notes previously rejected as email.",
+    "existing_policy_tag": null,
+    "name_normalized": "notes_free",
+    "name_suffix": "notes_free",
+    "rows_inspected": 1000,
+    "findings_total": 80,
+    "hit_rate": 0.08,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 80,
+        "very_likely": 0,
+        "likely": 0,
+        "possible": 80
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "cc jane***@ex.com"
+    ],
+    "sample_value_hashes": [
+      "6c9d4027f9b0888f26d910c6836c85c64857ea84da2cbbd704d3557531d75a88"
+    ],
+    "approx_ndv": 76000,
+    "null_rate": 0.08,
+    "length_p50": 140,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 140,
+      "top_value_hashes": [
+        "6c9d4027f9b0888f26d910c6836c85c64857ea84da2cbbd704d3557531d75a88"
+      ]
+    },
+    "dlp_fingerprint": 39887819533075544,
+    "value_fingerprint": 54717253248486690,
+    "proposed_term_id": "pii.customer.email",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.email",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType EMAIL_ADDRESS maps to pii.customer.email (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260801_myproj_customers_customers_retired_email",
+    "scan_id": "scan_20260801",
+    "profiled_at": "2026-08-01T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "retired_email",
+    "column_fqn": "myproj.customers.customers.retired_email",
+    "data_type": "STRING",
+    "column_description": "Column quietly emptied after a purge.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "name_normalized": "retired_email",
+    "name_suffix": "retired_email",
+    "rows_inspected": 1000,
+    "findings_total": 91,
+    "hit_rate": 0.091,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 91,
+        "very_likely": 91,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "gone***@old.example"
+    ],
+    "sample_value_hashes": [
+      "2fee75b899c71c696b2b59943841c9523ac9dcf6c78118bf1b3b581f5902bde5"
+    ],
+    "approx_ndv": 94000,
+    "null_rate": 0.02,
+    "length_p50": 22,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 22,
+      "top_value_hashes": [
+        "2fee75b899c71c696b2b59943841c9523ac9dcf6c78118bf1b3b581f5902bde5"
+      ]
+    },
+    "dlp_fingerprint": 39887819533075544,
+    "value_fingerprint": 5545247859626665,
+    "proposed_term_id": "pii.customer.email",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.email",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType EMAIL_ADDRESS maps to pii.customer.email (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260801_myproj_kyc_subjects_national_id",
+    "scan_id": "scan_20260801",
+    "profiled_at": "2026-08-01T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "kyc",
+    "table_id": "subjects",
+    "field_name": "national_id",
+    "column_fqn": "myproj.kyc.subjects.national_id",
+    "data_type": "STRING",
+    "column_description": "Subject national identifier.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_national_id",
+    "name_normalized": "national_id",
+    "name_suffix": "national_id",
+    "rows_inspected": 1000,
+    "findings_total": 82,
+    "hit_rate": 0.082,
+    "info_type_histogram": [
+      {
+        "info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+        "findings": 82,
+        "very_likely": 82,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "AB 12 34 56 C"
+    ],
+    "sample_value_hashes": [
+      "4d740561acf09c518cb249161123c2a64908a7720b57f3a8811c789ed5bb8323"
+    ],
+    "approx_ndv": 70000,
+    "null_rate": 0.04,
+    "length_p50": 9,
+    "dlp_payload": {
+      "dominant_info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 9,
+      "top_value_hashes": [
+        "4d740561acf09c518cb249161123c2a64908a7720b57f3a8811c789ed5bb8323"
+      ]
+    },
+    "dlp_fingerprint": 23314561533289892,
+    "value_fingerprint": 10946195559514804,
+    "proposed_term_id": "pii.customer.national_id",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.national_id",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType UK_NATIONAL_INSURANCE_NUMBER maps to pii.customer.national_id (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customer_site_id",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customer",
+    "field_name": "site.id",
+    "column_fqn": "myproj.customers.customer.site.id",
+    "data_type": "INT64",
+    "column_description": "Nested site key on the customer record.",
+    "existing_policy_tag": null,
+    "name_normalized": "site_id",
+    "name_suffix": "site_id",
+    "rows_inspected": 20000,
+    "findings_total": 0,
+    "hit_rate": 0,
+    "info_type_histogram": [],
+    "dominant_info_type": null,
+    "dominant_share": null,
+    "is_mixed": false,
+    "sample_quotes": [],
+    "sample_value_hashes": [],
+    "approx_ndv": 6100,
+    "null_rate": 0.01,
+    "length_p50": 6,
+    "dlp_payload": {
+      "dominant_info_type": null,
+      "is_mixed": false,
+      "dominant_share": null,
+      "hit_band": "lt_1pct",
+      "top_info_types": []
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 6,
+      "top_value_hashes": []
+    },
+    "dlp_fingerprint": 8560406003096140,
+    "value_fingerprint": 58411059774857650,
+    "proposed_term_id": "identifier.network.site",
+    "name_rule_term_id": "identifier.network.site",
+    "dlp_term_id": null,
+    "proposal_source": "name_rule",
+    "proposal_rule_id": "rule_site_id_project",
+    "proposal_reason": "Name rule rule_site_id_project (exact_normalized 'site_id' @ project:myproj) suggests identifier.network.site. Name rules never apply tags.",
+    "shape_ok": true
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customers_contact",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "contact",
+    "column_fqn": "myproj.customers.customers.contact",
+    "data_type": "STRING",
+    "column_description": "Legacy contact blob.",
+    "existing_policy_tag": null,
+    "name_normalized": "contact",
+    "name_suffix": "contact",
+    "rows_inspected": 100,
+    "findings_total": 85,
+    "hit_rate": 0.85,
+    "info_type_histogram": [
+      {
+        "info_type": "PHONE_NUMBER",
+        "findings": 45,
+        "very_likely": 0,
+        "likely": 45,
+        "possible": 0
+      },
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 40,
+        "very_likely": 0,
+        "likely": 40,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "PHONE_NUMBER",
+    "dominant_share": 0.5294117647058824,
+    "is_mixed": true,
+    "sample_quotes": [
+      "desk***@corp.example",
+      "+44 7700 900***"
+    ],
+    "sample_value_hashes": [
+      "1d68ef4a62fc5b1487407c9aa10a9ca17abc0c02011249ca5388271e83b3836f",
+      "0539bda91772e73d95851ba9380c792e29ecf6c40086d51ef00e13a0163ccae9"
+    ],
+    "approx_ndv": 9400,
+    "null_rate": 0.04,
+    "length_p50": 40,
+    "dlp_payload": {
+      "dominant_info_type": "PHONE_NUMBER",
+      "is_mixed": true,
+      "dominant_share": 0.53,
+      "hit_band": "ge_50pct",
+      "top_info_types": [
+        {
+          "info_type": "PHONE_NUMBER",
+          "share": 0.53
+        },
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 0.47
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 40,
+      "top_value_hashes": [
+        "0539bda91772e73d95851ba9380c792e29ecf6c40086d51ef00e13a0163ccae9",
+        "1d68ef4a62fc5b1487407c9aa10a9ca17abc0c02011249ca5388271e83b3836f"
+      ]
+    },
+    "dlp_fingerprint": 56925683221600370,
+    "value_fingerprint": 31241340628238336,
+    "proposed_term_id": null,
+    "name_rule_term_id": null,
+    "dlp_term_id": null,
+    "proposal_source": "mixed",
+    "proposal_rule_id": null,
+    "proposal_reason": "Multiple infoTypes each hold ≥20% of findings. No single business term.",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customers_email",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "email",
+    "column_fqn": "myproj.customers.customers.email",
+    "data_type": "STRING",
+    "column_description": "Primary login email.",
+    "existing_policy_tag": null,
+    "name_normalized": "email",
+    "name_suffix": "email",
+    "rows_inspected": 1000,
+    "findings_total": 90,
+    "hit_rate": 0.09,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 90,
+        "very_likely": 90,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "a***@retail.example",
+      "b***@home.example"
+    ],
+    "sample_value_hashes": [
+      "0dc2c04a33d838543d9ea821a01aa755a1ad599957bc2566760650cf0a412825",
+      "053697e343264737b8c375799d6ce2da92af56edf3d835254b43096bc7160620"
+    ],
+    "approx_ndv": 98000,
+    "null_rate": 0.02,
+    "length_p50": 22,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 22,
+      "top_value_hashes": [
+        "053697e343264737b8c375799d6ce2da92af56edf3d835254b43096bc7160620",
+        "0dc2c04a33d838543d9ea821a01aa755a1ad599957bc2566760650cf0a412825"
+      ]
+    },
+    "dlp_fingerprint": 39887819533075544,
+    "value_fingerprint": 15339119894684040,
+    "proposed_term_id": "pii.customer.email",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.email",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType EMAIL_ADDRESS maps to pii.customer.email (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customers_email_stable",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "email_stable",
+    "column_fqn": "myproj.customers.customers.email_stable",
+    "data_type": "STRING",
+    "column_description": "Billing email, already tagged.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "name_normalized": "email_stable",
+    "name_suffix": "email_stable",
+    "rows_inspected": 1000,
+    "findings_total": 90,
+    "hit_rate": 0.09,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 90,
+        "very_likely": 90,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "stable***@billing.example"
+    ],
+    "sample_value_hashes": [
+      "f1c74046923efc5cf20714b92660b991bbf5f8f65aadde89aef3b0597261aa5c"
+    ],
+    "approx_ndv": 99000,
+    "null_rate": 0.01,
+    "length_p50": 21,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 21,
+      "top_value_hashes": [
+        "f1c74046923efc5cf20714b92660b991bbf5f8f65aadde89aef3b0597261aa5c"
+      ]
+    },
+    "dlp_fingerprint": 39887819533075544,
+    "value_fingerprint": 65455289791154760,
+    "proposed_term_id": "pii.customer.email",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.email",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType EMAIL_ADDRESS maps to pii.customer.email (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customers_legacy_id",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "legacy_id",
+    "column_fqn": "myproj.customers.customers.legacy_id",
+    "data_type": "STRING",
+    "column_description": "Was billed as email; rescan looks like national id.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "name_normalized": "legacy_id",
+    "name_suffix": "legacy_id",
+    "rows_inspected": 1000,
+    "findings_total": 80,
+    "hit_rate": 0.08,
+    "info_type_histogram": [
+      {
+        "info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+        "findings": 80,
+        "very_likely": 80,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "QQ 12 34 56 C"
+    ],
+    "sample_value_hashes": [
+      "23ad47e02c71c2f1e2539724a5907d85878d5eb0fe7ba95746f20b59433aafe1"
+    ],
+    "approx_ndv": 81000,
+    "null_rate": 0.03,
+    "length_p50": 9,
+    "dlp_payload": {
+      "dominant_info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 9,
+      "top_value_hashes": [
+        "23ad47e02c71c2f1e2539724a5907d85878d5eb0fe7ba95746f20b59433aafe1"
+      ]
+    },
+    "dlp_fingerprint": 23314561533289892,
+    "value_fingerprint": 51556975659100390,
+    "proposed_term_id": "pii.customer.national_id",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.national_id",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType UK_NATIONAL_INSURANCE_NUMBER maps to pii.customer.national_id (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customers_mobile",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "mobile",
+    "column_fqn": "myproj.customers.customers.mobile",
+    "data_type": "STRING",
+    "column_description": "Mobile number. Live tag disagrees with last approval.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "name_normalized": "mobile",
+    "name_suffix": "mobile",
+    "rows_inspected": 800,
+    "findings_total": 70,
+    "hit_rate": 0.0875,
+    "info_type_histogram": [
+      {
+        "info_type": "PHONE_NUMBER",
+        "findings": 70,
+        "very_likely": 70,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "PHONE_NUMBER",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "+1 202 555 01**"
+    ],
+    "sample_value_hashes": [
+      "98a45bf0079fc238214129dedac574af874edca294981dd61714c2e7b16baeac"
+    ],
+    "approx_ndv": 88000,
+    "null_rate": 0.04,
+    "length_p50": 12,
+    "dlp_payload": {
+      "dominant_info_type": "PHONE_NUMBER",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "PHONE_NUMBER",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 12,
+      "top_value_hashes": [
+        "98a45bf0079fc238214129dedac574af874edca294981dd61714c2e7b16baeac"
+      ]
+    },
+    "dlp_fingerprint": 64664308361525940,
+    "value_fingerprint": 15162516558834096,
+    "proposed_term_id": "pii.customer.phone",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.phone",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType PHONE_NUMBER maps to pii.customer.phone (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customers_notes",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "notes",
+    "column_fqn": "myproj.customers.customers.notes",
+    "data_type": "STRING",
+    "column_description": "Free-text support notes.",
+    "existing_policy_tag": null,
+    "name_normalized": "notes",
+    "name_suffix": "notes",
+    "rows_inspected": 1000,
+    "findings_total": 2,
+    "hit_rate": 0.002,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 2,
+        "very_likely": 0,
+        "likely": 0,
+        "possible": 2
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "pls email c***@ex.com"
+    ],
+    "sample_value_hashes": [
+      "ced8cf7cc5df437f05d00b0e678d0449d2c87b02a2c4611a750c0eea6be8ef15"
+    ],
+    "approx_ndv": 82000,
+    "null_rate": 0.11,
+    "length_p50": 180,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "lt_1pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "10_50pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 180,
+      "top_value_hashes": [
+        "ced8cf7cc5df437f05d00b0e678d0449d2c87b02a2c4611a750c0eea6be8ef15"
+      ]
+    },
+    "dlp_fingerprint": 45597764670257930,
+    "value_fingerprint": 3834784760552783,
+    "proposed_term_id": null,
+    "name_rule_term_id": null,
+    "dlp_term_id": null,
+    "proposal_source": "low_hit_rate",
+    "proposal_rule_id": null,
+    "proposal_reason": "Hit rate 0.200% is below 1%. Treating as noise, not a column class.",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customers_notes_free",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "notes_free",
+    "column_fqn": "myproj.customers.customers.notes_free",
+    "data_type": "STRING",
+    "column_description": "Notes previously rejected as email.",
+    "existing_policy_tag": null,
+    "name_normalized": "notes_free",
+    "name_suffix": "notes_free",
+    "rows_inspected": 1000,
+    "findings_total": 80,
+    "hit_rate": 0.08,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 80,
+        "very_likely": 0,
+        "likely": 0,
+        "possible": 80
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "cc jane***@ex.com"
+    ],
+    "sample_value_hashes": [
+      "6c9d4027f9b0888f26d910c6836c85c64857ea84da2cbbd704d3557531d75a88"
+    ],
+    "approx_ndv": 76000,
+    "null_rate": 0.08,
+    "length_p50": 140,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 140,
+      "top_value_hashes": [
+        "6c9d4027f9b0888f26d910c6836c85c64857ea84da2cbbd704d3557531d75a88"
+      ]
+    },
+    "dlp_fingerprint": 39887819533075544,
+    "value_fingerprint": 54717253248486690,
+    "proposed_term_id": "pii.customer.email",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.email",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType EMAIL_ADDRESS maps to pii.customer.email (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_customers_customers_retired_email",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "customers",
+    "table_id": "customers",
+    "field_name": "retired_email",
+    "column_fqn": "myproj.customers.customers.retired_email",
+    "data_type": "STRING",
+    "column_description": "Column quietly emptied after a purge.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "name_normalized": "retired_email",
+    "name_suffix": "retired_email",
+    "rows_inspected": 1000,
+    "findings_total": 0,
+    "hit_rate": 0,
+    "info_type_histogram": [],
+    "dominant_info_type": null,
+    "dominant_share": null,
+    "is_mixed": false,
+    "sample_quotes": [],
+    "sample_value_hashes": [],
+    "approx_ndv": 12,
+    "null_rate": 0.91,
+    "length_p50": 0,
+    "dlp_payload": {
+      "dominant_info_type": null,
+      "is_mixed": false,
+      "dominant_share": null,
+      "hit_band": "lt_1pct",
+      "top_info_types": []
+    },
+    "value_payload": {
+      "null_rate_band": "ge_50pct",
+      "ndv_band": "11_100",
+      "length_p50": 0,
+      "top_value_hashes": []
+    },
+    "dlp_fingerprint": 8560406003096140,
+    "value_fingerprint": 66221424525109270,
+    "proposed_term_id": null,
+    "name_rule_term_id": null,
+    "dlp_term_id": null,
+    "proposal_source": "low_hit_rate",
+    "proposal_rule_id": null,
+    "proposal_reason": "Hit rate 0.000% is below 1%. Treating as noise, not a column class.",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_finance_cards_site_id",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "finance",
+    "table_id": "cards",
+    "field_name": "site_id",
+    "column_fqn": "myproj.finance.cards.site_id",
+    "data_type": "STRING",
+    "column_description": "Misnamed column that holds card PANs.",
+    "existing_policy_tag": null,
+    "name_normalized": "site_id",
+    "name_suffix": "site_id",
+    "rows_inspected": 800,
+    "findings_total": 70,
+    "hit_rate": 0.0875,
+    "info_type_histogram": [
+      {
+        "info_type": "CREDIT_CARD_NUMBER",
+        "findings": 70,
+        "very_likely": 70,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "CREDIT_CARD_NUMBER",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "4111 **** **** 1111"
+    ],
+    "sample_value_hashes": [
+      "82a9c889c4859ddaaf375c13fd37d771df1d0febe9bba13ccd8a9809dfdda12b"
+    ],
+    "approx_ndv": 64000,
+    "null_rate": 0.01,
+    "length_p50": 16,
+    "dlp_payload": {
+      "dominant_info_type": "CREDIT_CARD_NUMBER",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "CREDIT_CARD_NUMBER",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 16,
+      "top_value_hashes": [
+        "82a9c889c4859ddaaf375c13fd37d771df1d0febe9bba13ccd8a9809dfdda12b"
+      ]
+    },
+    "dlp_fingerprint": 57117857435015350,
+    "value_fingerprint": 66657437116560830,
+    "proposed_term_id": "pii.customer.national_id",
+    "name_rule_term_id": "identifier.network.site",
+    "dlp_term_id": "pii.customer.national_id",
+    "proposal_source": "conflict",
+    "proposal_rule_id": "rule_site_id_project",
+    "proposal_reason": "Name rule rule_site_id_project suggests identifier.network.site (identifier) but DLP maps CREDIT_CARD_NUMBER → pii.customer.national_id (pii) with dominant_share=1.00 hit_rate=0.087. Safer default is the DLP term.",
+    "shape_ok": false
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_kyc_subjects_national_id",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "kyc",
+    "table_id": "subjects",
+    "field_name": "national_id",
+    "column_fqn": "myproj.kyc.subjects.national_id",
+    "data_type": "STRING",
+    "column_description": "Subject national identifier.",
+    "existing_policy_tag": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_national_id",
+    "name_normalized": "national_id",
+    "name_suffix": "national_id",
+    "rows_inspected": 1000,
+    "findings_total": 85,
+    "hit_rate": 0.085,
+    "info_type_histogram": [
+      {
+        "info_type": "EMAIL_ADDRESS",
+        "findings": 85,
+        "very_likely": 85,
+        "likely": 0,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "EMAIL_ADDRESS",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "kyc***@mail.example"
+    ],
+    "sample_value_hashes": [
+      "c1553b5a38ef6d9c840fd1953a6a5ce4abd466ed8c7ba6ffa848bfb68911ca2c"
+    ],
+    "approx_ndv": 74000,
+    "null_rate": 0.05,
+    "length_p50": 18,
+    "dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 18,
+      "top_value_hashes": [
+        "c1553b5a38ef6d9c840fd1953a6a5ce4abd466ed8c7ba6ffa848bfb68911ca2c"
+      ]
+    },
+    "dlp_fingerprint": 39887819533075544,
+    "value_fingerprint": 41364284843782060,
+    "proposed_term_id": "pii.customer.email",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.email",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType EMAIL_ADDRESS maps to pii.customer.email (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_ops_jobs_job_id",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "ops",
+    "table_id": "jobs",
+    "field_name": "job_id",
+    "column_fqn": "myproj.ops.jobs.job_id",
+    "data_type": "STRING",
+    "column_description": "Airflow / batch job id.",
+    "existing_policy_tag": null,
+    "name_normalized": "job_id",
+    "name_suffix": "job_id",
+    "rows_inspected": 180000,
+    "findings_total": 0,
+    "hit_rate": 0,
+    "info_type_histogram": [],
+    "dominant_info_type": null,
+    "dominant_share": null,
+    "is_mixed": false,
+    "sample_quotes": [],
+    "sample_value_hashes": [],
+    "approx_ndv": 180000,
+    "null_rate": 0,
+    "length_p50": 16,
+    "dlp_payload": {
+      "dominant_info_type": null,
+      "is_mixed": false,
+      "dominant_share": null,
+      "hit_band": "lt_1pct",
+      "top_info_types": []
+    },
+    "value_payload": {
+      "null_rate_band": "lt_1pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 16,
+      "top_value_hashes": []
+    },
+    "dlp_fingerprint": 8560406003096140,
+    "value_fingerprint": 4938726689374239,
+    "proposed_term_id": null,
+    "name_rule_term_id": null,
+    "dlp_term_id": null,
+    "proposal_source": "low_hit_rate",
+    "proposal_rule_id": null,
+    "proposal_reason": "Hit rate 0.000% is below 1%. Treating as noise, not a column class.",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_products_products_product_name",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "products",
+    "table_id": "products",
+    "field_name": "product_name",
+    "column_fqn": "myproj.products.products.product_name",
+    "data_type": "STRING",
+    "column_description": "Catalogue product title.",
+    "existing_policy_tag": null,
+    "name_normalized": "product_name",
+    "name_suffix": "product_name",
+    "rows_inspected": 80,
+    "findings_total": 35,
+    "hit_rate": 0.4375,
+    "info_type_histogram": [
+      {
+        "info_type": "PERSON_NAME",
+        "findings": 35,
+        "very_likely": 0,
+        "likely": 35,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "PERSON_NAME",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "Ada Lovelace kit",
+      "Grace Hopper case"
+    ],
+    "sample_value_hashes": [
+      "086a0c4824b50e8a063b19c78976ad3716f8ba1e815c1c62665b29c57a580440",
+      "9fa591e8ebe7f8c620ae022d57c94914440b5cae165f3e43c2c1dda66243ffd6"
+    ],
+    "approx_ndv": 12000,
+    "null_rate": 0,
+    "length_p50": 28,
+    "dlp_payload": {
+      "dominant_info_type": "PERSON_NAME",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "10_50pct",
+      "top_info_types": [
+        {
+          "info_type": "PERSON_NAME",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "lt_1pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 28,
+      "top_value_hashes": [
+        "086a0c4824b50e8a063b19c78976ad3716f8ba1e815c1c62665b29c57a580440",
+        "9fa591e8ebe7f8c620ae022d57c94914440b5cae165f3e43c2c1dda66243ffd6"
+      ]
+    },
+    "dlp_fingerprint": 26364378913953776,
+    "value_fingerprint": 70823411676782440,
+    "proposed_term_id": "pii.customer.name",
+    "name_rule_term_id": null,
+    "dlp_term_id": "pii.customer.name",
+    "proposal_source": "dlp_map",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType PERSON_NAME maps to pii.customer.name (priority 10).",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_ran_prod_sites_site_id",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "ran_prod",
+    "table_id": "sites",
+    "field_name": "site_id",
+    "column_fqn": "myproj.ran_prod.sites.site_id",
+    "data_type": "INT64",
+    "column_description": "6-digit RAN site identifier.",
+    "existing_policy_tag": null,
+    "name_normalized": "site_id",
+    "name_suffix": "site_id",
+    "rows_inspected": 4200,
+    "findings_total": 0,
+    "hit_rate": 0,
+    "info_type_histogram": [],
+    "dominant_info_type": null,
+    "dominant_share": null,
+    "is_mixed": false,
+    "sample_quotes": [],
+    "sample_value_hashes": [],
+    "approx_ndv": 4200,
+    "null_rate": 0,
+    "length_p50": 6,
+    "dlp_payload": {
+      "dominant_info_type": null,
+      "is_mixed": false,
+      "dominant_share": null,
+      "hit_band": "lt_1pct",
+      "top_info_types": []
+    },
+    "value_payload": {
+      "null_rate_band": "lt_1pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 6,
+      "top_value_hashes": []
+    },
+    "dlp_fingerprint": 8560406003096140,
+    "value_fingerprint": 6112722743121287,
+    "proposed_term_id": "identifier.network.site",
+    "name_rule_term_id": "identifier.network.site",
+    "dlp_term_id": null,
+    "proposal_source": "name_rule",
+    "proposal_rule_id": "rule_site_id_ran_prod",
+    "proposal_reason": "Name rule rule_site_id_ran_prod (exact_normalized 'site_id' @ dataset:myproj.ran_prod) suggests identifier.network.site. Name rules never apply tags.",
+    "shape_ok": true
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_raw_events_widget_token",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "raw",
+    "table_id": "events",
+    "field_name": "widget_token",
+    "column_fqn": "myproj.raw.events.widget_token",
+    "data_type": "STRING",
+    "column_description": "Custom widget token, no catalog map.",
+    "existing_policy_tag": null,
+    "name_normalized": "widget_token",
+    "name_suffix": "widget_token",
+    "rows_inspected": 500,
+    "findings_total": 50,
+    "hit_rate": 0.1,
+    "info_type_histogram": [
+      {
+        "info_type": "CUSTOM_WIDGET_TOKEN",
+        "findings": 50,
+        "very_likely": 0,
+        "likely": 50,
+        "possible": 0
+      }
+    ],
+    "dominant_info_type": "CUSTOM_WIDGET_TOKEN",
+    "dominant_share": 1,
+    "is_mixed": false,
+    "sample_quotes": [
+      "wgt_8f3a**"
+    ],
+    "sample_value_hashes": [
+      "880d8a961095963f953c46410ece4d92f04d0f40872b3eacf5cc4c0c073161f6"
+    ],
+    "approx_ndv": 50000,
+    "null_rate": 0,
+    "length_p50": 24,
+    "dlp_payload": {
+      "dominant_info_type": "CUSTOM_WIDGET_TOKEN",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "10_50pct",
+      "top_info_types": [
+        {
+          "info_type": "CUSTOM_WIDGET_TOKEN",
+          "share": 1
+        }
+      ]
+    },
+    "value_payload": {
+      "null_rate_band": "lt_1pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 24,
+      "top_value_hashes": [
+        "880d8a961095963f953c46410ece4d92f04d0f40872b3eacf5cc4c0c073161f6"
+      ]
+    },
+    "dlp_fingerprint": 50469555203835770,
+    "value_fingerprint": 39493274590172184,
+    "proposed_term_id": null,
+    "name_rule_term_id": null,
+    "dlp_term_id": null,
+    "proposal_source": "unmapped",
+    "proposal_rule_id": null,
+    "proposal_reason": "Dominant infoType CUSTOM_WIDGET_TOKEN has no row in info_type_map.",
+    "shape_ok": null
+  },
+  {
+    "profile_id": "prof_scan_20260908_myproj_staging_sites_site_id",
+    "scan_id": "scan_20260908",
+    "profiled_at": "2026-09-08T09:15:00Z",
+    "project_id": "myproj",
+    "dataset_id": "staging",
+    "table_id": "sites",
+    "field_name": "site_id",
+    "column_fqn": "myproj.staging.sites.site_id",
+    "data_type": "STRING",
+    "column_description": "Staging copy using 32-char hex tokens.",
+    "existing_policy_tag": null,
+    "name_normalized": "site_id",
+    "name_suffix": "site_id",
+    "rows_inspected": 900,
+    "findings_total": 0,
+    "hit_rate": 0,
+    "info_type_histogram": [],
+    "dominant_info_type": null,
+    "dominant_share": null,
+    "is_mixed": false,
+    "sample_quotes": [],
+    "sample_value_hashes": [],
+    "approx_ndv": 900,
+    "null_rate": 0.02,
+    "length_p50": 32,
+    "dlp_payload": {
+      "dominant_info_type": null,
+      "is_mixed": false,
+      "dominant_share": null,
+      "hit_band": "lt_1pct",
+      "top_info_types": []
+    },
+    "value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "101_1k",
+      "length_p50": 32,
+      "top_value_hashes": []
+    },
+    "dlp_fingerprint": 8560406003096140,
+    "value_fingerprint": 32881876502756540,
+    "proposed_term_id": "identifier.network.site",
+    "name_rule_term_id": "identifier.network.site",
+    "dlp_term_id": null,
+    "proposal_source": "name_rule_shape_mismatch",
+    "proposal_rule_id": "rule_site_id_project",
+    "proposal_reason": "Name rule rule_site_id_project (exact_normalized 'site_id' @ project:myproj) suggests identifier.network.site, but value sketch is outside term_catalog bounds.",
+    "shape_ok": false
+  }
+]
