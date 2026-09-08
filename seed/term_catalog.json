@@ -1,0 +1,296 @@
+[
+  {
+    "term_id": "pii.customer.email",
+    "display_name": "Customer email",
+    "description": "A mailbox that can reach a person.",
+    "when_to_use": "Columns whose values are primarily email addresses.",
+    "when_not_to_use": "Free-text notes that occasionally mention an email.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "sensitivity_rank": 50,
+    "parent_term_id": null,
+    "term_family": "pii",
+    "dlp_info_types": [
+      "EMAIL_ADDRESS"
+    ],
+    "masking_policy": "HASH",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "STRING"
+    ],
+    "min_length": 6,
+    "max_length": 254,
+    "min_ndv": 50,
+    "max_ndv": null,
+    "max_null_rate": 0.4
+  },
+  {
+    "term_id": "pii.customer.phone",
+    "display_name": "Customer phone",
+    "description": "A personal or billing phone number.",
+    "when_to_use": "Direct-dial numbers stored as a dedicated column.",
+    "when_not_to_use": "Mixed contact blobs or extension-only fields.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_phone",
+    "sensitivity_rank": 45,
+    "parent_term_id": null,
+    "term_family": "pii",
+    "dlp_info_types": [
+      "PHONE_NUMBER"
+    ],
+    "masking_policy": "HASH",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "STRING",
+      "INT64"
+    ],
+    "min_length": 7,
+    "max_length": 20,
+    "min_ndv": 20,
+    "max_ndv": null,
+    "max_null_rate": 0.5
+  },
+  {
+    "term_id": "pii.customer.name",
+    "display_name": "Customer name",
+    "description": "A person's given or family name.",
+    "when_to_use": "Name columns for people.",
+    "when_not_to_use": "Product, venue, or legal-entity names.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_name",
+    "sensitivity_rank": 40,
+    "parent_term_id": null,
+    "term_family": "pii",
+    "dlp_info_types": [
+      "PERSON_NAME"
+    ],
+    "masking_policy": "DEFAULT",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "STRING"
+    ],
+    "min_length": 2,
+    "max_length": 80,
+    "min_ndv": 10,
+    "max_ndv": null,
+    "max_null_rate": 0.3
+  },
+  {
+    "term_id": "pii.customer.dob",
+    "display_name": "Date of birth",
+    "description": "A person's date of birth.",
+    "when_to_use": "Dedicated DOB columns.",
+    "when_not_to_use": "Event dates, created_at, or order dates.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_dob",
+    "sensitivity_rank": 60,
+    "parent_term_id": null,
+    "term_family": "pii",
+    "dlp_info_types": [
+      "DATE_OF_BIRTH"
+    ],
+    "masking_policy": "ALWAYS_NULL",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "DATE",
+      "TIMESTAMP",
+      "STRING"
+    ],
+    "min_length": null,
+    "max_length": null,
+    "min_ndv": 20,
+    "max_ndv": null,
+    "max_null_rate": 0.4
+  },
+  {
+    "term_id": "pii.customer.national_id",
+    "display_name": "National id / payment PAN",
+    "description": "Government id or primary account number.",
+    "when_to_use": "NI numbers, national ids, or card PANs.",
+    "when_not_to_use": "Internal surrogate keys and site codes.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_national_id",
+    "sensitivity_rank": 80,
+    "parent_term_id": null,
+    "term_family": "pii",
+    "dlp_info_types": [
+      "CREDIT_CARD_NUMBER",
+      "UK_NATIONAL_INSURANCE_NUMBER"
+    ],
+    "masking_policy": "ALWAYS_NULL",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "STRING"
+    ],
+    "min_length": 8,
+    "max_length": 19,
+    "min_ndv": 20,
+    "max_ndv": null,
+    "max_null_rate": 0.3
+  },
+  {
+    "term_id": "pii.customer.address",
+    "display_name": "Customer address",
+    "description": "A street or postal address.",
+    "when_to_use": "Structured or free-text address columns.",
+    "when_not_to_use": "City-only or country-code columns.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_address",
+    "sensitivity_rank": 35,
+    "parent_term_id": null,
+    "term_family": "pii",
+    "dlp_info_types": [
+      "STREET_ADDRESS"
+    ],
+    "masking_policy": "DEFAULT",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "STRING"
+    ],
+    "min_length": 8,
+    "max_length": 200,
+    "min_ndv": 20,
+    "max_ndv": null,
+    "max_null_rate": 0.5
+  },
+  {
+    "term_id": "pii.free_text",
+    "display_name": "Free text (may contain PII)",
+    "description": "Unstructured notes that can leak PII.",
+    "when_to_use": "Comments, tickets, and support notes.",
+    "when_not_to_use": "Dedicated identifier or PII columns.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/free_text",
+    "sensitivity_rank": 20,
+    "parent_term_id": null,
+    "term_family": "pii",
+    "dlp_info_types": [],
+    "masking_policy": "DEFAULT",
+    "auto_propose_ok": false,
+    "active": true,
+    "expected_types": [
+      "STRING"
+    ],
+    "min_length": null,
+    "max_length": null,
+    "min_ndv": null,
+    "max_ndv": null,
+    "max_null_rate": null
+  },
+  {
+    "term_id": "pii.mixed",
+    "display_name": "Mixed PII",
+    "description": "A column that holds more than one PII class.",
+    "when_to_use": "Contact blobs with email and phone together.",
+    "when_not_to_use": "A column with one dominant infoType.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/mixed_pii",
+    "sensitivity_rank": 70,
+    "parent_term_id": null,
+    "term_family": "pii",
+    "dlp_info_types": [],
+    "masking_policy": "ALWAYS_NULL",
+    "auto_propose_ok": false,
+    "active": true,
+    "expected_types": [
+      "STRING"
+    ],
+    "min_length": null,
+    "max_length": null,
+    "min_ndv": null,
+    "max_ndv": null,
+    "max_null_rate": null
+  },
+  {
+    "term_id": "identifier.network.site",
+    "display_name": "Radio / network site id",
+    "description": "A 5–7 digit site key. DLP will not detect these safely.",
+    "when_to_use": "site_id, siteid, site_code, or customer.site.id.",
+    "when_not_to_use": "job_id, UUID tokens, or payment identifiers.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/network_site",
+    "sensitivity_rank": 15,
+    "parent_term_id": null,
+    "term_family": "identifier",
+    "dlp_info_types": [],
+    "masking_policy": "NONE",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "INT64",
+      "STRING",
+      "NUMERIC"
+    ],
+    "min_length": 4,
+    "max_length": 8,
+    "min_ndv": 10,
+    "max_ndv": 100000,
+    "max_null_rate": 0.3
+  },
+  {
+    "term_id": "identifier.network.exchange",
+    "display_name": "Exchange / PoP id",
+    "description": "An exchange or point-of-presence code.",
+    "when_to_use": "exchange_id and pop_id columns.",
+    "when_not_to_use": "Generic location text.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/network_exchange",
+    "sensitivity_rank": 15,
+    "parent_term_id": null,
+    "term_family": "identifier",
+    "dlp_info_types": [],
+    "masking_policy": "NONE",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "STRING",
+      "INT64"
+    ],
+    "min_length": 3,
+    "max_length": 12,
+    "min_ndv": 5,
+    "max_ndv": 50000,
+    "max_null_rate": 0.3
+  },
+  {
+    "term_id": "identifier.account.number",
+    "display_name": "Account number",
+    "description": "An internal account or billing identifier.",
+    "when_to_use": "Account numbers that are not national ids.",
+    "when_not_to_use": "Card PANs or government ids.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/account_number",
+    "sensitivity_rank": 25,
+    "parent_term_id": null,
+    "term_family": "identifier",
+    "dlp_info_types": [],
+    "masking_policy": "HASH",
+    "auto_propose_ok": true,
+    "active": true,
+    "expected_types": [
+      "STRING",
+      "INT64"
+    ],
+    "min_length": 6,
+    "max_length": 20,
+    "min_ndv": 50,
+    "max_ndv": null,
+    "max_null_rate": 0.2
+  },
+  {
+    "term_id": "other.unclassified",
+    "display_name": "Unclassified",
+    "description": "No business term assigned yet.",
+    "when_to_use": "Explicit steward decision that a column is not in the catalog.",
+    "when_not_to_use": "As an auto-proposal.",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/unclassified",
+    "sensitivity_rank": 0,
+    "parent_term_id": null,
+    "term_family": "other",
+    "dlp_info_types": [],
+    "masking_policy": "NONE",
+    "auto_propose_ok": false,
+    "active": true,
+    "expected_types": [],
+    "min_length": null,
+    "max_length": null,
+    "min_ndv": null,
+    "max_ndv": null,
+    "max_null_rate": null
+  }
+]

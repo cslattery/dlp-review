@@ -1,0 +1,37 @@
+[
+  {
+    "info_type": "EMAIL_ADDRESS",
+    "term_id": "pii.customer.email",
+    "priority": 10
+  },
+  {
+    "info_type": "PHONE_NUMBER",
+    "term_id": "pii.customer.phone",
+    "priority": 10
+  },
+  {
+    "info_type": "PERSON_NAME",
+    "term_id": "pii.customer.name",
+    "priority": 10
+  },
+  {
+    "info_type": "DATE_OF_BIRTH",
+    "term_id": "pii.customer.dob",
+    "priority": 10
+  },
+  {
+    "info_type": "CREDIT_CARD_NUMBER",
+    "term_id": "pii.customer.national_id",
+    "priority": 10
+  },
+  {
+    "info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+    "term_id": "pii.customer.national_id",
+    "priority": 10
+  },
+  {
+    "info_type": "STREET_ADDRESS",
+    "term_id": "pii.customer.address",
+    "priority": 10
+  }
+]
