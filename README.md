@@ -43,15 +43,16 @@ Proposal precedence (fresh each scan):
 ## Run locally (seed JSON, no BigQuery)
 
 ```bash
+git clone https://github.com/cslattery/dlp-review.git
+cd dlp-review
 npm install
+npm run generate-seed   # rebuilds the findings histogram + profiles + drift
 npm run dev
 ```
 
 Opens on [http://127.0.0.1:43180](http://127.0.0.1:43180). The API reads `/seed/*.json`. Steward actions write to `/.data` (created from seed on first mutation). Delete `/.data` to reset the queue.
 
-```bash
-npm run generate-seed   # rebuild profiles + drift from fixtures
-```
+The steward queue works from the committed profiles and drift events. `npm run generate-seed` writes the larger `seed/dlp_findings.json` histogram from `lib/fixtures.ts` (same numbers the SQL fixtures describe). `npm install` writes `package-lock.json`.
 
 ### Pages
 
