@@ -1,0 +1,12 @@
+[
+  {
+    "negative_id": "neg_job_id_site",
+    "pattern": "job_id",
+    "scope_type": "dataset",
+    "scope_value": "myproj.ops",
+    "rejected_term_id": "identifier.network.site",
+    "column_fqn": "myproj.ops.jobs.job_id",
+    "notes": "job_id is an ops key, never a radio site.",
+    "created_at": "2026-03-04T12:00:00Z"
+  }
+]

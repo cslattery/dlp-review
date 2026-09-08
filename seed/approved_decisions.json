@@ -1,0 +1,218 @@
+[
+  {
+    "column_fqn": "myproj.customers.customers.email_stable",
+    "taxonomy_version": "v1",
+    "last_confirmed_scan_id": "scan_20260801",
+    "last_dlp_fingerprint": 39887819533075544,
+    "last_value_fingerprint": 65455289791154760,
+    "last_dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "last_value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 21,
+      "top_value_hashes": [
+        "f1c74046923efc5cf20714b92660b991bbf5f8f65aadde89aef3b0597261aa5c"
+      ]
+    },
+    "term_id": "pii.customer.email",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "status": "approved",
+    "rejected_term_id": null,
+    "lock_policy": "lock",
+    "approved_by": "ada@myproj",
+    "approved_at": "2026-07-02T11:00:00Z",
+    "notes": "Confirmed billing email.",
+    "do_not_ask_until": null
+  },
+  {
+    "column_fqn": "myproj.customers.customers.legacy_id",
+    "taxonomy_version": "v1",
+    "last_confirmed_scan_id": "scan_20260801",
+    "last_dlp_fingerprint": 39887819533075544,
+    "last_value_fingerprint": 70356564305025420,
+    "last_dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "last_value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 22,
+      "top_value_hashes": [
+        "fdac71912c849c19cc298f5f642af15d7f72de585c27751269078d83d924919c"
+      ]
+    },
+    "term_id": "pii.customer.email",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "status": "approved",
+    "rejected_term_id": null,
+    "lock_policy": "lock",
+    "approved_by": "ada@myproj",
+    "approved_at": "2026-06-10T11:00:00Z",
+    "notes": "Originally classified as email.",
+    "do_not_ask_until": null
+  },
+  {
+    "column_fqn": "myproj.kyc.subjects.national_id",
+    "taxonomy_version": "v1",
+    "last_confirmed_scan_id": "scan_20260801",
+    "last_dlp_fingerprint": 23314561533289892,
+    "last_value_fingerprint": 10946195559514804,
+    "last_dlp_payload": {
+      "dominant_info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "UK_NATIONAL_INSURANCE_NUMBER",
+          "share": 1
+        }
+      ]
+    },
+    "last_value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 9,
+      "top_value_hashes": [
+        "4d740561acf09c518cb249161123c2a64908a7720b57f3a8811c789ed5bb8323"
+      ]
+    },
+    "term_id": "pii.customer.national_id",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_national_id",
+    "status": "approved",
+    "rejected_term_id": null,
+    "lock_policy": "lock",
+    "approved_by": "ada@myproj",
+    "approved_at": "2026-05-20T11:00:00Z",
+    "notes": "KYC national id.",
+    "do_not_ask_until": null
+  },
+  {
+    "column_fqn": "myproj.customers.customers.retired_email",
+    "taxonomy_version": "v1",
+    "last_confirmed_scan_id": "scan_20260801",
+    "last_dlp_fingerprint": 39887819533075544,
+    "last_value_fingerprint": 5545247859626665,
+    "last_dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "last_value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 22,
+      "top_value_hashes": [
+        "2fee75b899c71c696b2b59943841c9523ac9dcf6c78118bf1b3b581f5902bde5"
+      ]
+    },
+    "term_id": "pii.customer.email",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_email",
+    "status": "approved",
+    "rejected_term_id": null,
+    "lock_policy": "lock",
+    "approved_by": "ada@myproj",
+    "approved_at": "2026-04-01T11:00:00Z",
+    "notes": "Was a live email column.",
+    "do_not_ask_until": null
+  },
+  {
+    "column_fqn": "myproj.customers.customers.notes_free",
+    "taxonomy_version": "v1",
+    "last_confirmed_scan_id": "scan_20260801",
+    "last_dlp_fingerprint": 39887819533075544,
+    "last_value_fingerprint": 54717253248486690,
+    "last_dlp_payload": {
+      "dominant_info_type": "EMAIL_ADDRESS",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "EMAIL_ADDRESS",
+          "share": 1
+        }
+      ]
+    },
+    "last_value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 140,
+      "top_value_hashes": [
+        "6c9d4027f9b0888f26d910c6836c85c64857ea84da2cbbd704d3557531d75a88"
+      ]
+    },
+    "term_id": null,
+    "policy_tag_resource": null,
+    "status": "rejected",
+    "rejected_term_id": "pii.customer.email",
+    "lock_policy": "lock",
+    "approved_by": "ada@myproj",
+    "approved_at": "2026-08-02T11:00:00Z",
+    "notes": "Occasional emails in notes are not a column class.",
+    "do_not_ask_until": "2026-09-15T00:00:00Z"
+  },
+  {
+    "column_fqn": "myproj.customers.customers.mobile",
+    "taxonomy_version": "v1",
+    "last_confirmed_scan_id": "scan_20260801",
+    "last_dlp_fingerprint": 64664308361525940,
+    "last_value_fingerprint": 15162516558834096,
+    "last_dlp_payload": {
+      "dominant_info_type": "PHONE_NUMBER",
+      "is_mixed": false,
+      "dominant_share": 1,
+      "hit_band": "1_10pct",
+      "top_info_types": [
+        {
+          "info_type": "PHONE_NUMBER",
+          "share": 1
+        }
+      ]
+    },
+    "last_value_payload": {
+      "null_rate_band": "1_10pct",
+      "ndv_band": "1k_plus",
+      "length_p50": 12,
+      "top_value_hashes": [
+        "98a45bf0079fc238214129dedac574af874edca294981dd61714c2e7b16baeac"
+      ]
+    },
+    "term_id": "pii.customer.phone",
+    "policy_tag_resource": "projects/myproj/locations/us/taxonomies/dlp_governance/policyTags/customer_phone",
+    "status": "approved",
+    "rejected_term_id": null,
+    "lock_policy": "lock",
+    "approved_by": "ada@myproj",
+    "approved_at": "2026-03-18T11:00:00Z",
+    "notes": "Approved as phone. Someone attached the email tag in BigQuery.",
+    "do_not_ask_until": null
+  }
+]
